@@ -5,6 +5,7 @@ body {
 .wrapper {
   position: relative;
   min-height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .content {
   padding-bottom: 90px;
@@ -16,6 +17,8 @@ body {
   width: 100%;
   height: 80px;
 }
+
 @import 'header.scss';
 @import 'footer.scss';
 @import 'normalize.scss';
+@import 'menu.scss';

@@ -3,9 +3,11 @@ const pug = require('gulp-pug');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 var spritesmith = require('gulp.spritesmith'); // спрайт
+const debug = require('gulp-debug');
+const newer = require('gulp-newer')
 
 
-
+const isDevelopment =!process.env.Node_ENV || process.env.NODE_ENV == 'development';
 
 
 // styles
@@ -52,8 +54,11 @@ function templates() {
 function styles() {
     return gulp.src('./src/styles/app.scss')
         .pipe(sourcemaps.init())
+        .pipe(debug())
+        .pipe(newer('docs'))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(sourcemaps.write())
+        .pipe(debug({title:'rem'}))
         .pipe(pxtorem())
         .pipe(rename({ suffix: '.min' }))
         .pipe(autoprefixer({
