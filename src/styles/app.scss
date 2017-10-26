@@ -6,9 +6,14 @@ body {
   position: relative;
   min-height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  width:100%;
+
 }
 .content {
   padding-bottom: 90px;
+  margin-left: 20px;
+  
+  height: 100%;
 }
 .footer {
   position: absolute;

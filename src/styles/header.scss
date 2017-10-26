@@ -1,19 +1,30 @@
 .header{
     display: flex;
+    
 }
 .left-block, .right-block{
     width: 50%;
     height: 120px;
     display:flex;
+    align-items:center;
+
+    
+}
+.right-block{
+    justify-content:flex-end;
 }
 .left-block__title{
 color: #666666;
 font-weight: 100;
 font-size: 36px;
-line-height: 1em;}
+line-height: 1em;
+
+}
 
 .right-block__title{
 line-height: 1.2em;
 color: #4b4b4b;
 font-style: italic;
+font-size: 13px;
+
 }
