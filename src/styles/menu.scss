@@ -4,19 +4,21 @@
     color: #ffffff;
     display: flex;
     list-style: none;
+    font-size: 13px;
+    font-weight: bold;
 }
 .list__link{
 padding: 20px 35px;
 line-height: 1em;
 display: inline-block;
 margin-right: 15px;
-font-size: 20px;
+
 line-height: 0.5em;
 cursor: pointer;
 color: #cccccc;
 text-decoration: none;
 &:hover{
-    background: #369;
+    background: #248cc8;;
 }
 }
 .sub-list{
