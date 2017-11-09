@@ -1,22 +1,59 @@
 .icons-block{
+    
+    
+}
+.icons-block__item{
     display: flex;
 }
+
 .icons-block__list{
     display: flex;
     width: 33%;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0 0 0;
+}
+.icons-block__title{
+    padding:20px 0;
+    color: #3b3b3b;
+    font-weight: bold;
+    font-size: 17px;
 }
 .icons-block__descpiction{
     text-align: center;
+    color: #5e5e5e;
+    font-size: 13px;
+    padding: 0 10px 20px 10px;
 }
 .title{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 40px 0 40px 0;
+    background: #F6F6F6;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+}
+.title__text{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #444444;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEEEEE;
+
 }
 .title__decs{
     width: 80%;
     text-align: center;
     margin: auto;
+    color:#666666;
+    padding-top: 20px;
+}
+.icons-block__pic{
+    width: 65px;
+    height: 65px;
+    background: #3a3b3e;
+    border-radius: 50%;
+
 }

@@ -100,14 +100,14 @@ function server() {
 
 // сборщик спрайта
 function images() {
-    var spriteData = gulp.src(paths.images.src).pipe(spritesmith({
+  /*  var spriteData = gulp.src(paths.images.src).pipe(spritesmith({
         imgName: 'sprite.png',
         cssName: 'sprite.css'
     }));
     return spriteData.pipe(gulp.dest(paths.images.dest));
-
-    //return gulp.src(paths.images.src)
-    // .pipe(gulp.dest(paths.images.dest));
+*/
+    return gulp.src(paths.images.src)
+     .pipe(gulp.dest(paths.images.dest));
 
 }
 

@@ -2,14 +2,16 @@
     
 }
 .slider__list{
-    min-width: 100%;
-    height: 300px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+   
 }
 .slider__item{
-
+    min-width: 100%;
 }
 .slider__pick{
-    background-image: url();
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    height: 420px;
 }

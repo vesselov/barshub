@@ -3,29 +3,30 @@ body {
   
 }
 .wrapper {
-  min-height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  min-width:100%;
+  width:1080px;
+  margin: auto;
   
 
 }
 .content {
-  padding-bottom: 90px;
+
   
   
-  height: 100%;
+ 
 }
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
+  text-align: center;
+  margin-top: 25px;
+  color: #aaaaaa;
+  font-size: 11.5px;
+ height: 80px;
 }
 
 @import 'header.scss';
-//@import 'footer.scss';
+@import 'footer.scss';
 @import 'normalize.scss';
 @import 'menu.scss';
 @import 'slider.scss';
 @import 'icons.scss';
+@import 'main.scss';
