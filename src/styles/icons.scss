@@ -1,0 +1,22 @@
+.icons-block{
+    display: flex;
+}
+.icons-block__list{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    align-items: center;
+}
+.icons-block__descpiction{
+    text-align: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title__decs{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
