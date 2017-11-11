@@ -20,7 +20,8 @@ cursor: pointer;
 color: #cccccc;
 text-decoration: none;
 &:hover{
-    background: #248cc8;;
+    background: #248cc8;
+    transition: .5s;
 }
 }
 .sub-list{

@@ -4,9 +4,27 @@
 .main-title{
 color: #444444;
 margin: 1em 0;
-font-weight: 500;}
+font-weight: 500;
+font-size: 1.5em;
+}
 .main__description{
 line-height: 1.6em;
 color: #666666;
 font-size: 13px;
+}
+.main{
+    display: flex;
+}
+.main-block{
+    display: block; 
+}
+.aside  {
+    width: 41%;
+    position: relative;
+}
+
+.aside__pic{
+   position: absolute;
+   top: 40px;
+   left: 30px;
 }
