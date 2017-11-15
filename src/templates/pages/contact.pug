@@ -5,4 +5,22 @@ block variables
 block content
   include ../common/header
   include ../common/menu
+  .contact-block
+    .contact-block__title Свяжитесь с нами
+    .contact-block__descrip Если у вас есть какие-либо вопросы или замечания, пожалуйста, свяжитесь с нами через форму ниже. Мы ответим на ваше сообщение в течение 24 рабочих часов. Благодарим вас за ваши интересы в Bars Hub  
+    .input-block
+      form.form(action="")
+        label.form__user(for='name') Ваше имя
+            input#name.form-control(type='text', placeholder='Ваше имя' name='name')
+        label.form__user(for="email") Ваш емайл
+            input#email(type="email", name="email" placeholder='email')
+        label.form__user(for="subj") Тема
+          input#subj(type="text", name="subj" placeholder='Тема')
+        label.form__user(for="textarea") Ваше сообщение 
+          textarea.textarea(name="textarea", cols="30", rows="10")  
+        button#butoon(type="submit") отправить  
+  .content-picture
+    img.content-picture__axel(src="", alt="")    
+    
+      
   include ../common/footer

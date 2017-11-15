@@ -13,17 +13,38 @@
 padding: 20px 35px;
 line-height: 1em;
 display: inline-block;
-margin-right: 15px;
-
+position: relative;
 line-height: 0.5em;
 cursor: pointer;
 color: #cccccc;
 text-decoration: none;
 &:hover{
     background: #248cc8;
-    transition: .5s;
+    transition: .5s;   
 }
 }
+ul li:hover ul{
+    display: block;
+}
+
 .sub-list{
+    position: absolute;
+    cursor: pointer;
+    color: #cccccc;
+    margin: 0;
+    padding: 0;
+    background: #343538;
     display: none;
+}
+.sub-list__item{
+    list-style: none;
+    
+}
+.sub-list__link{
+    display: block;
+    padding: 20px 35px;
+    &:hover{
+        background: #248cc8;
+        transition: .5s;
+    }
 }
