@@ -25,6 +25,7 @@ text-decoration: none;
 }
 ul li:hover ul{
     display: block;
+    transition: .5s;
 }
 
 .sub-list{
