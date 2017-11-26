@@ -6,12 +6,22 @@ block content
   include ../common/header
   include ../common/menu
   .block-buy
-    .block-buy__title 
-      a(href="http://index.html") Home / Dana 35 C-Clip BARS Hub
-    .block-buy__left
-      .block-buy__image
+    
+    .block-left
+      .block-buy__title 
+        a(href="http://index.html") Home / Dana 35 C-Clip BARS Hub
+      a.block-buy__link(href="")
+        img.block-buy__image(src="./assets/images/IMG_20150911_143703-600x600.jpg", alt="")
+       
       
-    .block-buy__right
+    .block-right
+      .block-right__product Dana 35 C-Clip BARS Hub
+      .block-right__price $259.00 $189.00
+      .block-right__stock 27 на складе
+      .block-right__order 
+        input.block-right__number(type="number" step="1" min="1" max="27" value="1")
+        button.block-right__card(type="submit") Добавить карту
+
     
       
     
