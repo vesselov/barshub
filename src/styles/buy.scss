@@ -1,6 +1,18 @@
 .block-buy__image{
     width: 300px;
     height: 300px;
+    position: relative;
+    &:after{
+        content: "Скидка";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: green;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
 }
 .block-buy__link{
    
@@ -27,3 +39,7 @@
 .block-right__price{
 color: #77a464;
 font-size: 1.25em;}
+
+.block-price{
+    display: flex;
+}
