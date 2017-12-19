@@ -118,6 +118,7 @@ exports.templates = templates;
 exports.styles = styles;
 exports.del = del;
 exports.images = images;
+exports.scripts = scripts;
 
 // просто работаем
 gulp.task('default', gulp.series(

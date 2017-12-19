@@ -1,31 +1,47 @@
 .block-buy__image{
     width: 300px;
     height: 300px;
-    position: relative;
-    &:after{
-        content: "Скидка";
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: green;
-        left: 0;
-        top: 0;
-        z-index: 100;
-    }
+  
+   
+   
+}
+.block-buy__title{
+   padding-bottom: 35px;
+}
+.sale{
+    width: 40px;
+    height: 40px;
+     border-radius: 50%;
+    background: green;
+    left: -18px;
+    top: -20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    
+}
+.sale__text{
+    
 }
 .block-buy__link{
-   
+    position: relative;
+    display: inline-block;
 }
 .block-left{
    flex-direction: column;
 }
 .block-right{
     flex-direction: column;
+    padding-left: 35px;
+    padding-top: 50px;
     
 }
 .block-buy{
     display: flex;
+    padding-top: 35px;
 }
 .block-right__number{
     width: 20px;
@@ -42,4 +58,27 @@ font-size: 1.25em;}
 
 .block-price{
     display: flex;
+    padding-bottom: 25px;
 }
+.block-right__stock{
+    color: green;
+    padding-bottom: 25px;
+}
+.block-right__number{
+    padding: 0;
+    width: 30px;
+  
+}
+#tabbedPanel{display: block;}  
+.tabbedPanel__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.tabbedPanel__item{
+    float: left;
+    padding-left: 10px;
+    background: grey;
+}
+.tabbedPanel__link{
+    display: inline-block;}

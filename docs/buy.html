@@ -7,8 +7,10 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./assets/styles/app.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--link(rel="icon" href='./assets/images/favicon.png')-->
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="/assets/scripts/jquery.min.js"></script>
+    <script src="/assets/scripts/jquery-ui.min.js"></script>
+    <script src="/assets/scripts/app.js"></script>
   </head>
   <body>
     <section class="section header">
@@ -33,7 +35,10 @@
       <div class="content">
         <div class="block-buy">
           <div class="block-left">
-            <div class="block-buy__title">Домой / Dana 35 C-Clip BARS Hub</div><a class="block-buy__link" href=""><img class="block-buy__image" src="./assets/images/IMG_20150911_143703-600x600.jpg" alt=""></a>
+            <div class="block-buy__title">Домой / Dana 35 C-Clip BARS Hub</div><a class="block-buy__link" href=""><img class="block-buy__image" src="./assets/images/IMG_20150911_143703-600x600.jpg" alt="">
+              <div class="sale"> 
+                <div class="sale__text">sale</div>
+              </div></a>
           </div>
           <div class="block-right">
             <div class="block-right__product">Dana 35 C-Clip BARS Hub</div>
@@ -47,8 +52,25 @@
               <button class="block-right__card" type="submit">Добавить карту</button>
             </div>
           </div>
-          <div class="aside-buy"><img class="asade__pick" src="./assets/images/bars-sidebar.png" alt=""></div>
         </div>
+        <div id="tabbedPanel"> 
+          <ul class="tabbedPanel__list">
+            <li class="tabbedPanel__item"><a class="tabbedPanel__link" id="description"> Описание </a></li>
+            <li class="tabbedPanel__item"><a class="tabbedPanel__link" id="addInf"> Добавление инфо    </a></li>
+            <li class="tabbedPanel__item"><a class="tabbedPanel__link" id="review"> Отзывы</a></li>
+          </ul>
+        </div>
+        <div id="description">
+          <h4>Product Description  </h4>
+        </div>
+        <div id="addInf">
+          <h4>#addInf  </h4>
+        </div>
+        <div id="review">
+          <h4>#review      </h4>
+        </div>
+        <!--.aside-buy//   img.asade__pick(src="./assets/images/bars-sidebar.png", alt="")
+        -->
       </div>
     </div>
     <footer class="footer">

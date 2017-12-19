@@ -27,6 +27,7 @@ text-decoration: none;
 ul li:hover ul{
     display: block;
     transition: .5s;
+    z-index: 100;
 }
 
 .sub-list{
