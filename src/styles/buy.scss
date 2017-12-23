@@ -69,7 +69,10 @@ font-size: 1.25em;}
     width: 30px;
   
 }
-#tabbedPanel{display: block;}  
+#tabbedPanel{
+    display: block;
+ 
+}  
 .tabbedPanel__list{
     padding: 0;
     margin: 0;
@@ -78,5 +81,7 @@ font-size: 1.25em;}
 .tabbedPanel__item{
     float: left;
     padding-left: 10px;
-    background: grey;
+   
 }
+.tabconteiner{}  
+
