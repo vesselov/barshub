@@ -8,8 +8,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
-    <script src="/assets/scripts/jquery.min.js"></script>
-    <script src="/assets/scripts/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="/assets/scripts/app.js"></script>
   </head>
   <body>
@@ -51,26 +50,9 @@
             <div class="block-right__stock">27 на складе</div>
             <div class="block-right__order"> 
               <input class="block-right__number" type="number" step="1" min="1" max="27" value="1">
-              <button class="block-right__card" type="submit">Добавить карту</button>
             </div>
+            <!--  button.block-right__card(type="submit") Добавить карту-->
           </div>
-        </div>
-        <div id="tabbedPanel"> 
-          <ul class="tabbedPanel__list">
-            <li class="tabbedPanel__item"><a class="tabbedPanel__link" href="#description"> Описание </a></li>
-            <li class="tabbedPanel__item"><a class="tabbedPanel__link" href="#addInf"> Добавление инфо    </a></li>
-            <li class="tabbedPanel__item"><a class="tabbedPanel__link" href="#review"> Отзывы</a></li>
-          </ul>
-          <div id="description">
-            <h4>Product Description  </h4>
-          </div>
-          <div id="addInf">
-            <h4>#addInf  </h4>
-          </div>
-          <div id="review"></div>
-          <h4>#review      </h4>
-          <!--.aside-buy-->
-          <!--   img.asade__pick(src="./assets/images/bars-sidebar.png", alt="")-->
         </div>
       </div>
     </div>
@@ -78,4 +60,7 @@
       <div class="footer__title">Copyright 2016. Bars Hub. All Rights Reserved.</div>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
