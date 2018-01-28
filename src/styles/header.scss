@@ -1,13 +1,21 @@
 .header{
     display: flex;
     padding: 0 20px;
-    
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .left-block, .right-block{
     width: 50%;
     height: 120px;
     display:flex;
     align-items:center;
+    @include tablets {
+        height: 60px;
+        width: 100%;
+        justify-content:center;
+        height: 60px;
+    }
 
     
 }
@@ -20,6 +28,10 @@
 }
 .right-block{
     justify-content:flex-end;
+    @include tablets {
+        justify-content: center;
+    }
+
 }
 .left-block__title{
 color: #666666;

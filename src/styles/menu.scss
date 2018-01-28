@@ -8,15 +8,18 @@
     font-weight: bold;
     margin: 0;
     padding-left: 80px;
+    @include tablets {
+        padding-left: 0px;
+        justify-content: center;
+        
+    }
     
 }
 
 .list__link{
 padding: 20px 35px;
-line-height: 1em;
 display: inline-block;
 position: relative;
-line-height: 0.5em;
 cursor: pointer;
 color: #cccccc;
 text-decoration: none;
@@ -24,11 +27,17 @@ text-decoration: none;
     background: #248cc8;
     transition: .5s;   
 }
+
+    @include tablets {
+        padding: 10px 25px;
+    }
+ 
 }
 ul li:hover ul{
     display: block;
     transition: .5s;
     z-index: 100;
+
 }
 
 .sub-list{
@@ -42,7 +51,7 @@ ul li:hover ul{
 }
 .sub-list__item{
     list-style: none;
-   
+
     
 }
 .sub-list__link{
@@ -52,4 +61,10 @@ ul li:hover ul{
         background: #248cc8;
         transition: .4s;
     }
+   
+        @include tablets {
+            padding: 10px 25px;
+        }
+      
+    
 }

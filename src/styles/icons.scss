@@ -4,6 +4,10 @@
 }
 .icons-block__item{
     display: flex;
+    @include tablets {
+        flex-direction: column;
+        
+    }
 }
 
 .icons-block__list{
@@ -12,6 +16,9 @@
     flex-direction: column;
     align-items: center;
     padding: 20px 0 0 0;
+    @include tablets {
+        width: 100%;
+    }
 }
 .icons-block__title{
     padding:20px 0;
