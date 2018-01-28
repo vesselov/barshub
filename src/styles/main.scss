@@ -16,11 +16,24 @@ font-size: 1.5em;
 line-height: 1.6em;
 color: #666666;
 font-size: 13px;
+@include tablets{
+    width: 80%;
+    text-align: center;
+}
+}
+.youtube-block {
+    @include tablets{
+        width: 80%;
+    }
 }
 .main{
     display: flex;
     margin: auto;
     width: 70%;
+    @include tablets {
+       width: 100%;
+       padding: 0 5px 0 5px;
+    }
 }
 .main-block{
     display: block;
@@ -30,6 +43,10 @@ font-size: 13px;
 .aside  {
     width: 41%;
     position: relative;
+    
+    @include tablets{
+        display: none;
+    }
 }
 
 .aside__pic{

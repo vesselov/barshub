@@ -25,6 +25,7 @@
     color: #3b3b3b;
     font-weight: bold;
     font-size: 17px;
+    text-align: center;
 }
 .icons-block__descpiction{
     text-align: center;
@@ -48,6 +49,10 @@
     color: #444444;
     padding-bottom: 20px;
     border-bottom: 1px solid #EEEEEE;
+    @include tablets {
+       width: 80%;
+       text-align: center;
+    }
 
 }
 .title__decs{
