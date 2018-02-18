@@ -14,30 +14,34 @@ html
         script(src="/assets/scripts/app.js")
     
     body
-        .header-content
-            section.section.header
-                .left-block 
-                    a(href="index.html").left-block__title Bars Hub
-                .right-block
-                    .right-block__title Broken Axle Recovery System.
-            ul.menu-block
-                li.list__item
-                    a(href="index.html").list__link Домой
-                li.list__item
-                    a(href="buy.html").list__link Купить 
-                    ul.sub-list
-                        li.sub-list__item
-                            a.sub-list__link  Карта
-                        li.sub-list__item
-                            a.sub-list__link  Купить
-                        li.sub-list__item
-                            a.sub-list__link  Мой кабинет          
-                li.list__item
-                    a(href="faqs.html").list__link Вопросы  
-                li.list__item
-                    a(href="contact.html").list__link Контакты        
+        
         .wrapper
             .content
+                .header-content
+                    section.section.header
+                        .left-block 
+                            a(href="index.html").left-block__title Bars Hub
+                        .right-block
+                            .right-block__title Broken Axle Recovery System.
+                    ul.menu-block
+                        li.list__item
+                            a(href="index.html").list__link Домой
+                        li.list__item
+                            a(href="buy.html").list__link Купить 
+                            ul.sub-list
+                                li.sub-list__item
+                                    a.sub-list__link  Карта
+                                li.sub-list__item
+                                    a.sub-list__link  Купить
+                                li.sub-list__item
+                                    a.sub-list__link  Мой кабинет          
+                        li.list__item
+                            a(href="faqs.html").list__link Вопросы  
+                        li.list__item
+                            a(href="contact.html").list__link Контакты  
+                        .container    
+                            input.input(type="text" placeholder="Search")
+                            i.fa.fa-search(aria-hidden="true")          
                 block content
         footer.footer
             .footer__title Copyright 2016. Bars Hub. All Rights Reserved.
