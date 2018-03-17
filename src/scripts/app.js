@@ -1,19 +1,8 @@
-$(document).ready(function(){
-    $('#tabbedPanels').tab({
-        show : 'fadeIn',
-        hide : 'fadeOut'
+$(document).ready(function() {
+
+    $(".fa-search").click(function() {
+        $(".contain, .input").toggleClass("active");
+        $("input[type='text']").focus();
     });
-   var hash = location.hash;
-   if(hash){
-       $('#tabbedPanels').tabs('load',hash)}
-   
 
 });
-$(document).ready(function(){
-  
-    $(".fa-search").click(function(){
-      $(".container, .input").toggleClass("active");
-      $("input[type='text']").focus();
-    });
-    
-  });

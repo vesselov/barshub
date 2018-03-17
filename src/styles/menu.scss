@@ -1,5 +1,4 @@
-.menu-block{
-   
+.menu-block {
     background: #343538;
     color: #ffffff;
     display: flex;
@@ -11,36 +10,32 @@
     @include tablets {
         padding-left: 0px;
         justify-content: center;
-        
     }
-    
 }
 
-.list__link{
-padding: 20px 35px;
-display: inline-block;
-position: relative;
-cursor: pointer;
-color: #cccccc;
-text-decoration: none;
-&:hover{
-    background: #248cc8;
-    transition: .5s;   
-}
-
+.list__link {
+    padding: 20px 35px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #cccccc;
+    text-decoration: none;
+    &:hover {
+        background: #248cc8;
+        transition: .5s;
+    }
     @include tablets {
         padding: 10px 25px;
     }
- 
 }
-ul li:hover ul{
+
+ul li:hover ul {
     display: block;
     transition: .5s;
     z-index: 100;
-
 }
 
-.sub-list{
+.sub-list {
     position: absolute;
     cursor: pointer;
     color: #cccccc;
@@ -49,26 +44,24 @@ ul li:hover ul{
     background: #343538;
     display: none;
 }
-.sub-list__item{
-    list-style: none;
 
-    
+.sub-list__item {
+    list-style: none;
 }
-.sub-list__link{
+
+.sub-list__link {
     display: block;
     padding: 20px 35px;
-    &:hover{
+    &:hover {
         background: #248cc8;
         transition: .4s;
     }
-   
-        @include tablets {
-            padding: 10px 25px;
-        }
-      
-    
+    @include tablets {
+        padding: 10px 25px;
+    }
 }
-.container{
+
+.contain {
     width: 0px;
     height: 50px;
     background: #41484a;
@@ -78,10 +71,10 @@ ul li:hover ul{
     transition: all 0.5s ease;
     border-radius: 5px;
     position: relative;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-  
-  .input{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input {
     border: 0px;
     border-bottom: 2px solid #fff;
     background: transparent;
@@ -91,29 +84,29 @@ ul li:hover ul{
     color: #fff;
     font-weight: bold;
     transition: all 0.3s ease;
-  }
-  
-  .container .fa{
+}
+
+.contain .fa {
     color: #ffffff;
     position: absolute;
     right: 15px;
     top: 15px;
     font-size: 22px;
     cursor: pointer;
-  }
-  
-  .container.active{
+}
+
+.contain.active {
     width: 250px;
     padding-left: 25px;
     transition: all 0.5s ease;
-  }
-  
-  .input.active{
+}
+
+.input.active {
     width: 98%;
     padding-left: 5px;
     transition: all 0.5s 0.8s ease;
-  }
-  
-  input::placeholder {
+}
+
+input::placeholder {
     color: #fff;
-  }
+}

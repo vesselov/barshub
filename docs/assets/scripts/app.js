@@ -1,14 +1,8 @@
 $(document).ready(function() {
-    $('#tabContainer').tabs({
-        beforeActivate : function(evt) {
-            location.hash=$(evt.currentTarget).attr('href');
-        },
-          show: 'fadeIn',
-        hide: 'fadeOut'
+
+    $(".fa-search").click(function() {
+        $(".contain, .input").toggleClass("active");
+        $("input[type='text']").focus();
     });
-    var hash = location.hash; 
-      if (hash) { 
-          $('#tabContainer').tabs("load", hash) 
-      } 
-      
-  });
+
+});
