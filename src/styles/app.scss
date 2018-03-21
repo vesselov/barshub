@@ -1,31 +1,27 @@
-
-
 .wrapper {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  width:100%;
-  margin: auto;
-  
-
-
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    width: 100%;
+    margin: auto;
 }
 
+a:hover {
+    text-decoration: none;
+}
 
 .content {
+    margin: auto;
+}
 
- margin: auto;
-  
-  
- 
-}
 .footer {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
-  text-align: center;
-  margin-top: 25px;
-  color: #aaaaaa;
-  font-size: 11.5px;
- height: 80px;
- width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    color: #aaaaaa;
+    font-size: 11.5px;
+    height: 80px;
+    width: 100%;
 }
+
 @import 'media.scss';
 @import 'header.scss';
 @import 'footer.scss';
@@ -37,13 +33,11 @@
 @import 'form.scss';
 @import 'faq.scss';
 @import 'buy.scss';
-
-
 html {
-  @include tablets {
-      font-size:15px;
-  }
-  @include phones {
-      font-size: 13px;
-  }
+    @include tablets {
+        font-size: 15px;
+    }
+    @include phones {
+        font-size: 13px;
+    }
 }
