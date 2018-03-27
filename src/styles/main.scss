@@ -2,55 +2,60 @@ $descktop:1200px;
 $laptop:992px;
 $tablets:768px;
 $phones:480px;
-
-.main__description{
+.main__description {
     width: 640px;
 }
-.main-title{
-color: #444444;
-margin: 1em 0;
-font-weight: 500;
-font-size: 1.5em;
-}
-.main__description{
-line-height: 1.6em;
-color: #666666;
-font-size: 13px;
-@include tablets{
-    width: 80%;
-    text-align: center;
-}
-}
-.youtube-block {
-    @include tablets{
-        width: 80%;
+
+.main-title {
+    color: #444444;
+    margin: 1em 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    @include tablets {
+        text-align: center;
     }
 }
-.main{
+
+.main__description {
+    line-height: 1.6em;
+    color: #666666;
+    font-size: 13px;
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.youtube-block {
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.main {
     display: flex;
     margin: auto;
     width: 70%;
     @include tablets {
-       width: 100%;
-       padding: 0 5px 0 5px;
+        width: 100%;
+        padding: 0 5px 0 5px;
     }
 }
-.main-block{
+
+.main-block {
     display: block;
-   
-  
 }
-.aside  {
+
+.aside {
     width: 41%;
     position: relative;
-    
-    @include tablets{
+    @include tablets {
         display: none;
     }
 }
 
-.aside__pic{
-   position: absolute;
-   top: 40px;
-   left: 30px;
+.aside__pic {
+    position: absolute;
+    top: 40px;
+    left: 30px;
 }
