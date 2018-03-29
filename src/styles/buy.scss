@@ -1,17 +1,16 @@
-.block-buy__image{
+.block-buy__image {
     width: 300px;
     height: 300px;
-  
-   
-   
 }
-.block-buy__title{
-   padding-bottom: 35px;
+
+.block-buy__title {
+    padding-bottom: 35px;
 }
-.sale{
+
+.sale {
     width: 40px;
     height: 40px;
-     border-radius: 50%;
+    border-radius: 50%;
     background: green;
     left: -18px;
     top: -20px;
@@ -21,77 +20,190 @@
     text-align: center;
     justify-content: center;
     color: white;
-    
 }
-.sale__text{
-    
-}
-.block-buy__link{
+
+.block-buy__link {
     position: relative;
     display: inline-block;
 }
-.block-left{
-   flex-direction: column;
+
+.block-left {
+    flex-direction: column;
 }
-.block-right{
+
+.block-right {
     flex-direction: column;
     padding-left: 35px;
     padding-top: 50px;
-    
 }
-.block-buy{
+
+.block-buy {
     display: flex;
     padding-top: 35px;
     padding-left: 50px;
 }
-.block-right__number{
+
+.block-right__number {
     width: 20px;
     padding-left: 15px;
 }
-.block-right__product{
+
+.block-right__product {
     font-size: 22px;
     color: #3b3b3b;
     margin-bottom: 20px;
 }
-.block-right__price{
-color: #77a464;
-font-size: 1.25em;}
 
-.block-price{
+.block-right__price {
+    color: #77a464;
+    font-size: 1.25em;
+}
+
+.block-price {
     display: flex;
     padding-bottom: 25px;
 }
-.block-right__stock{
+
+.block-right__stock {
     color: green;
     padding-bottom: 25px;
 }
-.block-right__number{
+
+.block-right__number {
     padding: 0;
     width: 30px;
-  
 }
-#tabbedPanel{
+
+#tabbedPanel {
     display: block;
- 
-}  
-.tabbedPanel__list{
+}
+
+.tabbedPanel__list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.tabbedPanel__item{
+
+.tabbedPanel__item {
     float: left;
     padding-left: 10px;
-    border:1px solid #d3ced2;
+    border: 1px solid #d3ced2;
     border-radius: 3px;
-   
-
-   
 }
-.tabbedPanel__link{
+
+.tabbedPanel__link {
     display: inline-block;
     text-decoration: none;
     padding: 8px 20px 8px 0px;
 }
-.tabconteiner{}  
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.maintab {
+    min-width: 320px;
+    max-width: 700px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.sect {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label[for*='1']:before {
+    content: '\f1cb';
+}
+
+label[for*='2']:before {
+    content: '\f17d';
+}
+
+label[for*='3']:before {
+    content: '\f16b';
+}
+
+label[for*='4']:before {
+    content: '\f1a9';
+}
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input:checked+label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    label {
+        font-size: 0;
+    }
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px;
+    }
+}
