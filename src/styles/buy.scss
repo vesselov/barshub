@@ -97,7 +97,6 @@
     padding: 8px 20px 8px 0px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 *,
 *:before,
@@ -126,7 +125,6 @@ p {
 .maintab {
     min-width: 320px;
     max-width: 700px;
-    padding: 50px;
     margin: 0 auto;
     background: #fff;
 }
@@ -188,7 +186,7 @@ input:checked+label {
 #tab1:checked~#content1,
 #tab2:checked~#content2,
 #tab3:checked~#content3,
-#tab4:checked~#content4 {
+{
     display: block;
 }
 
@@ -206,4 +204,10 @@ input:checked+label {
     label {
         padding: 15px;
     }
+}
+
+.block-tab {
+    width: 80%;
+    padding-top: 35px;
+    padding-left: 50px;
 }
