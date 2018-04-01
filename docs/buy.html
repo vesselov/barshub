@@ -8,8 +8,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/app.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
   </head>
   <body>
     <div class="wrapper">
@@ -52,29 +52,52 @@
             </div>
             <div class="block-right__stock">27 на складе</div>
             <div class="block-right__order"> 
-              <input class="block-right__number" type="number" step="1" min="1" max="27" value="1">
+              <input class="block-right__number" type="number" step="1" min="1" max="27" size="4" value="1">
+              <button class="block-right__button" type="submit">Добавить </button>
             </div>
           </div>
         </div>
         <div class="block-tab">
           <div class="maintab"></div>
-          <input id="tab1" type="radio" name="tabs" checked>
+          <input class="input" id="tab1" type="radio" name="tabs" checked>
           <label for="tab1">Описание</label>
-          <input id="tab2" type="radio" name="tabs">
+          <input class="input" id="tab2" type="radio" name="tabs">
           <label for="tab2">Добавить информацию</label>
-          <input id="tab3" type="radio" name="tabs">
+          <input class="input" id="tab3" type="radio" name="tabs">
           <label for="tab3">Ответы</label>
           <div class="sect" id="content1">
-            <p>Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.</p>
-            <p>Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.</p>
+            <H4>Опичание продукта</H4>
+            <p>Dana 35 C-Clip rear axle is found on…</p>
+            <p>1984-1997 Jeep Wrangler</p>
+            <p>1984-2001 Jeep Cherokee</p>
+            <p>1993-2004 Jeep Grand Cherokee</p>
+            <p>1986-1992 Jeep Comanche</p>
+            <p>1987-1995 Jeep YJ Wrangler</p>
+            <p>1997-2006 Jeep TJ Wrangle</p>
           </div>
           <div class="sect" id="content2">
-            <p>Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.</p>
-            <p>Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.</p>
+            <H3>Добавленная информация</H3>
+            <p>Вес 	4.53592 кг</p>
+            <p>Размер	6 x 6 x 6 cm </p>
           </div>
           <div class="sect" id="content3">
-            <p>Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.</p>
-            <p>Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.</p>
+            <H3>Отзывы</H3>
+            <p>Пока нет никаких отзывов</p>
+            <p>Будь первым оставившим отзыв “Dana 35 C-Clip BARS Hub”</p>
+            <p>Ваш рейтинг</p>
+            <div class="buy-review">
+              <div class="buy__desc"> 
+                <label class="buy__review">Ваш отзыв
+                  <input class="input__review" type="text" cols="45" rows="8" aria-required="true">
+                </label>
+                <label class="buy__own">Name
+                  <input type="text" size="30" aria-required="true">
+                </label>
+                <label class="buy__email">email
+                  <input type="text" size="30" aria-required="true">
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>

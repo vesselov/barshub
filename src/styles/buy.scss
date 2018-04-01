@@ -97,7 +97,6 @@
     padding: 8px 20px 8px 0px;
 }
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 *,
 *:before,
 *:after {
@@ -135,8 +134,25 @@ p {
     border-top: 1px solid #ddd;
 }
 
-input {
+.block-right__button {
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.block-right__number {
+    width: 50px;
+    padding-left: 10px;
+}
+
+.buy__review {}
+
+.input {
     display: none;
+}
+
+.input__review {
+    display: block;
+    widows: 200px;
 }
 
 label {
