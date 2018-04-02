@@ -144,31 +144,40 @@ p {
     padding-left: 10px;
 }
 
-.buy__review {}
+.buy__review {
+    text-align: center;
+}
 
 .input {
     display: none;
 }
 
-.input__review {
-    display: block;
-    widows: 200px;
-}
+.input__review {}
 
 label {
     display: inline-block;
     margin: 0 0 -1px;
     padding: 15px 25px;
     font-weight: 600;
-    text-align: center;
     color: #bbb;
     border: 1px solid transparent;
+}
+
+.buy__own,
+.buy__email {
+    display: block;
 }
 
 label:before {
     font-family: fontawesome;
     font-weight: normal;
     margin-right: 10px;
+}
+
+.buy__text {
+    width: 400px;
+    height: 23px;
+    padding-left: 3px;
 }
 
 label[for*='1']:before {
