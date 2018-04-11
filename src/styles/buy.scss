@@ -145,14 +145,18 @@ p {
 }
 
 .buy__review {
-    text-align: center;
+    display: block;
 }
 
 .input {
     display: none;
 }
 
-.input__review {}
+.input__review {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
 
 label {
     display: inline-block;
@@ -178,6 +182,7 @@ label:before {
     width: 400px;
     height: 23px;
     padding-left: 3px;
+    display: block;
 }
 
 label[for*='1']:before {
