@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(".fa-search").click(function() {
-        $(".contain, .input").toggleClass("active");
+        $(".container__find, .input").toggleClass("active");
         $("input[type='text']").focus();
     });
 

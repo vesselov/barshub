@@ -61,7 +61,9 @@ ul li:hover ul {
     }
 }
 
-.contain {
+.wrapper__find {}
+
+.container__find {
     width: 0px;
     height: 50px;
     background: #41484a;
@@ -86,7 +88,7 @@ ul li:hover ul {
     transition: all 0.3s ease;
 }
 
-.contain .fa {
+.container__find .fa {
     color: #ffffff;
     position: absolute;
     right: 15px;
@@ -95,8 +97,8 @@ ul li:hover ul {
     cursor: pointer;
 }
 
-.contain.active {
-    width: 250px;
+.container__find.active {
+    width: 200px;
     padding-left: 25px;
     transition: all 0.5s ease;
 }
@@ -105,8 +107,4 @@ ul li:hover ul {
     width: 98%;
     padding-left: 5px;
     transition: all 0.5s 0.8s ease;
-}
-
-input::placeholder {
-    color: #fff;
 }
