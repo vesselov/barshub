@@ -11,6 +11,9 @@
         padding-left: 0px;
         justify-content: center;
     }
+    @include phones {
+        justify-content: flex-start;
+    }
 }
 
 .list__link {
@@ -26,6 +29,9 @@
     }
     @include tablets {
         padding: 10px 25px;
+    }
+    @include phones {
+        display: none;
     }
 }
 
@@ -107,4 +113,24 @@ ul li:hover ul {
     width: 98%;
     padding-left: 5px;
     transition: all 0.5s 0.8s ease;
+}
+
+.menu-block__hidden {
+    display: none;
+    @include phones {
+        display: flex;
+        cursor: pointer;
+        line-height: 50px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.menu-block__line {
+    width: 50px;
+    height: 3px;
+    background: crimson;
+    margin: 5px 0;
+    display: block;
+    margin-left: 30px;
 }
