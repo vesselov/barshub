@@ -15,11 +15,10 @@ $(document).ready(function() {
     $('.tabs').tabs();
 });
 
-function menuOpen() {
+function menuOpen(node) {
     var elem = document.getElementById('menu');
-    var hidden = document.getElementsByClassName('list__link')
+    var hidden = document.getElementById('list__link');
 
-    if (elem) {
 
-    }
-}
+
+};

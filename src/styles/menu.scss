@@ -31,7 +31,8 @@
         padding: 10px 25px;
     }
     @include phones {
-        // display: none;
+        //display: none;
+        padding: 5px 15px;
     }
     .active {
         display: inline-block;
