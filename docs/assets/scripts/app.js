@@ -20,8 +20,6 @@ function menuOpen() {
     var hidden = document.getElementsByClassName('list__link')
 
     if (elem) {
-        elem = hidden.classList.add('active');
-        console.log(elem)
-    }
 
+    }
 }
