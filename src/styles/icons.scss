@@ -1,16 +1,41 @@
-.icons-block{
-    
-    
-}
-.icons-block__item{
+.icons-block {}
+
+.icons-block__item {
     display: flex;
     @include tablets {
         flex-direction: column;
-        
     }
 }
 
-.icons-block__list{
+.icons-block__pic {
+    position: relative;
+}
+
+.icons-block__pic--dollar {
+    content: "\f0d6";
+}
+
+.icons-block__pic--fire {
+    content: '\f134';
+}
+
+.icons-block__pic--time {
+    content: "\f017";
+}
+
+.icons-block__pic:before {
+    font-family: fontawesome;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    top: 26%;
+    left: 23px;
+    width: 100%;
+    display: block;
+}
+
+.icons-block__list {
     display: flex;
     width: 33%;
     flex-direction: column;
@@ -20,20 +45,23 @@
         width: 100%;
     }
 }
-.icons-block__title{
-    padding:20px 0;
+
+.icons-block__title {
+    padding: 20px 0;
     color: #3b3b3b;
     font-weight: bold;
     font-size: 17px;
     text-align: center;
 }
-.icons-block__descpiction{
+
+.icons-block__descpiction {
     text-align: center;
     color: #5e5e5e;
     font-size: 13px;
     padding: 0 10px 20px 10px;
 }
-.title{
+
+.title {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -42,7 +70,8 @@
     border-bottom: 1px solid #DDDDDD;
     border-top: 1px solid #DDDDDD;
 }
-.title__text{
+
+.title__text {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 30px;
@@ -50,22 +79,22 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #EEEEEE;
     @include tablets {
-       width: 80%;
-       text-align: center;
+        width: 80%;
+        text-align: center;
     }
-
 }
-.title__decs{
+
+.title__decs {
     width: 80%;
     text-align: center;
     margin: auto;
-    color:#666666;
+    color: #666666;
     padding-top: 20px;
 }
-.icons-block__pic{
+
+.icons-block__pic {
     width: 65px;
     height: 65px;
     background: #3a3b3e;
     border-radius: 50%;
-
 }
