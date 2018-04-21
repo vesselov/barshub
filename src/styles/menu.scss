@@ -31,7 +31,7 @@
         padding: 10px 25px;
     }
     @include phones {
-        //display: none;
+        display: none;
         padding: 5px 15px;
     }
     .active {
@@ -122,7 +122,7 @@ ul li:hover ul {
 .menu-block__hidden {
     display: none;
     @include phones {
-        // display: flex;
+        display: flex;
         cursor: pointer;
         line-height: 50px;
         flex-direction: column;

@@ -15,10 +15,13 @@ $(document).ready(function() {
     $('.tabs').tabs();
 });
 
-function menuOpen(node) {
-    var elem = document.getElementById('menu');
-    var hidden = document.getElementById('list__link');
+function menuOpen() {
 
+    var elem = document.getElementById('menu');
+    if (elem.style.display === 'flex') {
+        elem.style.display === 'none';
+       
+    } else { elem.style.display === 'flex' }
 
 
 };
