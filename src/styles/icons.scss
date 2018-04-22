@@ -7,32 +7,36 @@
     }
 }
 
-.icons-block__pic {
-    position: relative;
-}
-
-.icons-block__pic--dollar {
+.icons-block__img--dollar:before {
     content: "\f0d6";
 }
 
-.icons-block__pic--fire {
+.icons-block__img--fire:before {
     content: '\f134';
 }
 
-.icons-block__pic--time {
+.icons-block__img--time:before {
     content: "\f017";
 }
 
-.icons-block__pic:before {
+.icons-block__pic {
+    width: 65px;
+    height: 65px;
+    background: #3a3b3e;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icons-block__img {
     font-family: fontawesome;
     font-weight: bold;
     font-size: 24px;
     color: #ffffff;
     position: absolute;
-    top: 26%;
-    left: 23px;
-    width: 100%;
+    top: 50%;
+    left: 31%;
     display: block;
+    transform: translateY(-50%);
 }
 
 .icons-block__list {
@@ -90,11 +94,4 @@
     margin: auto;
     color: #666666;
     padding-top: 20px;
-}
-
-.icons-block__pic {
-    width: 65px;
-    height: 65px;
-    background: #3a3b3e;
-    border-radius: 50%;
 }
