@@ -21,11 +21,12 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
-    color: #cccccc;
+    color: #e2e2e2;
     text-decoration: none;
     &:hover {
-        background: #248cc8;
+        background: #00bcff;
         transition: .5s;
+        color: #e2e2e2;
     }
     @include tablets {
         padding: 10px 25px;
@@ -62,9 +63,11 @@ ul li:hover ul {
 .sub-list__link {
     display: block;
     padding: 20px 35px;
+    color: #e2e2e2;
     &:hover {
-        background: #248cc8;
+        background: #00bcff;
         transition: .4s;
+        color: #e2e2e2;
     }
     @include tablets {
         padding: 10px 25px;
