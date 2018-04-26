@@ -5,3 +5,14 @@ block variables
 block content
   include ../common/header
   include ../common/menu
+  .acount-block
+    .acount__title Мой кабинет  
+    .acount__login Логин
+    form.acount-form(action="")
+      label.acount__label(for="login") Логин или емайл
+        input.acount__intr(type="text" name="login")
+      label.acount__label(for="password") Пароль
+        input.acount__intr(type="text" name="password") 
+      button вход
+      label(for="remember") Запомнить?
+        input(type="checkbox" name="remember") 

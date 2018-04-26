@@ -64,6 +64,8 @@ ul li:hover ul {
     display: block;
     padding: 20px 35px;
     color: #e2e2e2;
+    width: 190px;
+    background: #464646;
     &:hover {
         background: #00bcff;
         transition: .4s;
