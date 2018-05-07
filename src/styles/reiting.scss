@@ -1,0 +1,39 @@
+.rating-count {
+    display: flex;
+    width: 110px;
+}
+
+.rating-count input {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.raiting__star {
+    content: none;
+}
+
+.rating-count input+label {
+    font-size: 0;
+    display: block;
+    width: 22px;
+    height: 10px;
+    cursor: pointer;
+    background-image: url(../images/rating-star_fill.svg);
+}
+
+.rating-count label:hover~label,
+.rating-count:not(:hover) input:invalid+label,
+.rating-count:not(:hover) input:checked+label~label {
+    background: url(../images/rating-star.svg) no-repeat center / contain, url(../images/rating-star_fill.svg) no-repeat center / 0 0, url(../images/rating-star_focus.svg) no-repeat center / 0 0;
+}
+
+.rating-count input+label:hover,
+.rating-count:not(:hover) input:focus+label {
+    background-image: url(../images/rating-star_focus.svg);
+}

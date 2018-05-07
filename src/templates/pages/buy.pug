@@ -27,13 +27,13 @@ block content
   .block-tab
     .maintab
     input.input#tab1(type="radio" name="tabs" checked)
-    label(for="tab1") Описание
+    label.main__label(for="tab1") Описание
       
     input#tab2.input(type="radio" name="tabs")
-    label(for="tab2") Добавить информацию
+    label.main__label(for="tab2") Добавить информацию
       
     input#tab3.input(type="radio" name="tabs")
-    label(for="tab3") Ответы
+    label.main__label(for="tab3") Ответы
       
     
       
@@ -61,7 +61,19 @@ block content
       p Пока нет никаких отзывов
       p Будь первым оставившим отзыв “Dana 35 C-Clip BARS Hub”
 
-      p Ваш рейтинг
+       
+      .rating-count Ваш рейтинг
+        input#c1(type="radio" name="rating" value="1" required)
+        label.raiting__star(for="c1") 1
+        input#c2(type="radio" name="rating" value="2")
+        label.raiting__star(for="c2") 2
+        input#c3(type="radio" name="rating" value="3")
+        label.raiting__star(for="c3") 3
+        input#c4(type="radio" name="rating" value="4")
+        label.raiting__star(for="c4") 4
+        input#c5(type="radio" name="rating" value="5")
+        label.raiting__star(for="c5") 5
+    
       form(action="").buy-review
         .buy__desc 
           label.buy__review Ваш отзыв

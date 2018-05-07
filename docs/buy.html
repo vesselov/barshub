@@ -57,11 +57,11 @@
         <div class="block-tab">
           <div class="maintab"></div>
           <input class="input" id="tab1" type="radio" name="tabs" checked>
-          <label for="tab1">Описание</label>
+          <label class="main__label" for="tab1">Описание</label>
           <input class="input" id="tab2" type="radio" name="tabs">
-          <label for="tab2">Добавить информацию</label>
+          <label class="main__label" for="tab2">Добавить информацию</label>
           <input class="input" id="tab3" type="radio" name="tabs">
-          <label for="tab3">Ответы</label>
+          <label class="main__label" for="tab3">Ответы</label>
           <div class="sect" id="content1">
             <H4>Опичание продукта</H4>
             <p>Dana 35 C-Clip rear axle is found on…</p>
@@ -81,7 +81,18 @@
             <H3>Отзывы</H3>
             <p>Пока нет никаких отзывов</p>
             <p>Будь первым оставившим отзыв “Dana 35 C-Clip BARS Hub”</p>
-            <p>Ваш рейтинг</p>
+            <div class="rating-count">Ваш рейтинг
+              <input id="c1" type="radio" name="rating" value="1" required>
+              <label class="raiting__star" for="c1">1</label>
+              <input id="c2" type="radio" name="rating" value="2">
+              <label class="raiting__star" for="c2">2</label>
+              <input id="c3" type="radio" name="rating" value="3">
+              <label class="raiting__star" for="c3">3</label>
+              <input id="c4" type="radio" name="rating" value="4">
+              <label class="raiting__star" for="c4">4</label>
+              <input id="c5" type="radio" name="rating" value="5">
+              <label class="raiting__star" for="c5">5</label>
+            </div>
             <form class="buy-review" action="">
               <div class="buy__desc"> 
                 <label class="buy__review">Ваш отзыв
