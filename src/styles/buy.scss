@@ -1,277 +1,286 @@
-.block-buy__image {
-    width: 300px;
-    height: 300px;
-    @include phones {
-        width: 95%;
-        height: auto;
+    .block-buy__image {
+        width: 300px;
+        height: 300px;
+        @include phones {
+            width: 95%;
+            height: auto;
+        }
     }
-}
-
-.block-buy__title {
-    padding-bottom: 35px;
-}
-
-.sale {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: green;
-    left: -18px;
-    top: -20px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color: white;
-}
-
-.block-buy__link {
-    position: relative;
-    display: inline-block;
-}
-
-.block-left {
-    flex-direction: column;
-}
-
-.block-right {
-    flex-direction: column;
-    padding-left: 35px;
-    padding-top: 50px;
-}
-
-.block-buy {
-    display: flex;
-    padding-top: 35px;
-    padding-left: 50px;
-    @include phones {
-        padding-left: 20px;
+    
+    .block-buy__title {
+        padding-bottom: 35px;
+    }
+    
+    .sale {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: green;
+        left: -18px;
+        top: -20px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .block-buy__link {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .block-left {
         flex-direction: column;
     }
-}
-
-.block-right__number {
-    width: 20px;
-    padding-left: 15px;
-}
-
-.block-right__product {
-    font-size: 22px;
-    color: #3b3b3b;
-    margin-bottom: 20px;
-}
-
-.block-right__price {
-    color: #77a464;
-    font-size: 1.25em;
-}
-
-.block-price {
-    display: flex;
-    padding-bottom: 25px;
-}
-
-.block-right__stock {
-    color: green;
-    padding-bottom: 25px;
-}
-
-.block-right__number {
-    padding: 0;
-    width: 30px;
-}
-
-#tabbedPanel {
-    display: block;
-}
-
-.tabbedPanel__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.tabbedPanel__item {
-    float: left;
-    padding-left: 10px;
-    border: 1px solid #d3ced2;
-    border-radius: 3px;
-}
-
-.tabbedPanel__link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 8px 20px 8px 0px;
-}
-
-*,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100vh;
-}
-
-h1 {
-    padding: 50px 0;
-    font-weight: 400;
-    text-align: center;
-}
-
-p {
-    margin: 0 0 20px;
-    line-height: 1.5;
-}
-
-.maintab {
-    min-width: 320px;
-    max-width: 700px;
-    margin: 0 auto;
-    background: #fff;
-}
-
-.sect {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid #ddd;
-}
-
-.block-right__button {
-    padding: 5px 15px;
-    border-radius: 3px;
-}
-
-.block-right__number {
-    width: 50px;
-    padding-left: 10px;
-}
-
-.buy__review {
-    display: block;
-    @include phones {
-        width: 100%;
+    
+    .block-right {
+        flex-direction: column;
+        padding-left: 35px;
+        padding-top: 50px;
     }
-}
-
-.buy-review {
-    margin-left: -25px;
-}
-
-.input {
-    display: none;
-}
-
-.input__review {
-    display: block;
-    width: 350px;
-    padding: 5px;
-    height: 100px;
-    border-radius: 3px;
-    @include phones {
-        width: 100%;
+    
+    .block-buy {
+        display: flex;
+        padding-top: 35px;
+        padding-left: 50px;
+        @include phones {
+            padding-left: 20px;
+            flex-direction: column;
+        }
     }
-}
-
-.main__label {
-    display: inline-block;
-    margin: 0 0 -1px;
-    padding: 15px 25px;
-    font-weight: 600;
-    color: #bbb;
-    border: 1px solid transparent;
-}
-
-.buy__own,
-.buy__email {
-    display: block;
-}
-
-.main__label:before {
-    font-family: fontawesome;
-    font-weight: normal;
-    margin-right: 10px;
-}
-
-.buy__text {
-    width: 350px;
-    height: 23px;
-    padding-left: 3px;
-    display: block;
-    border-radius: 3px;
-    @include phones {
-        width: 100%;
+    
+    .block-right__number {
+        width: 20px;
+        padding-left: 15px;
     }
-}
-
-.main__label[for*='1']:before {
-    content: '\f1cb';
-}
-
-.main__label[for*='2']:before {
-    content: '\f17d';
-}
-
-.main__label[for*='3']:before {
-    content: '\f16b';
-}
-
-.main__label[for*='4']:before {
-    content: '\f1a9';
-}
-
-.main__label:hover {
-    color: #888;
-    cursor: pointer;
-}
-
-input:checked+.main__label {
-    color: #555;
-    border: 1px solid #ddd;
-    border-top: 2px solid orange;
-    border-bottom: 1px solid #fff;
-}
-
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-{
-    display: block;
-}
-
-@media screen and (max-width: 650px) {
-    .main__label {
-        font-size: 0;
+    
+    .block-right__product {
+        font-size: 22px;
+        color: #3b3b3b;
+        margin-bottom: 20px;
     }
-    .main__label:before {
+    
+    .block-right__price {
+        color: #77a464;
+        font-size: 1.25em;
+    }
+    
+    .block-price {
+        display: flex;
+        padding-bottom: 25px;
+    }
+    
+    .block-right__stock {
+        color: green;
+        padding-bottom: 25px;
+    }
+    
+    .block-right__number {
+        padding: 0;
+        width: 30px;
+    }
+    
+    #tabbedPanel {
+        display: block;
+    }
+    
+    .tabbedPanel__list {
+        padding: 0;
         margin: 0;
-        font-size: 18px;
+        list-style: none;
     }
-}
-
-@media screen and (max-width: 400px) {
+    
+    .tabbedPanel__item {
+        float: left;
+        padding-left: 10px;
+        border: 1px solid #d3ced2;
+        border-radius: 3px;
+    }
+    
+    .tabbedPanel__link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 20px 8px 0px;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100vh;
+    }
+    
+    h1 {
+        padding: 50px 0;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    p {
+        margin: 0 0 20px;
+        line-height: 1.5;
+    }
+    
+    .maintab {
+        min-width: 320px;
+        max-width: 700px;
+        margin: 0 auto;
+        background: #fff;
+    }
+    
+    .sect {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid #ddd;
+    }
+    
+    .block-right__button {
+        padding: 5px 15px;
+        border-radius: 3px;
+    }
+    
+    .block-right__number {
+        width: 50px;
+        padding-left: 10px;
+    }
+    
+    .buy__review {
+        display: block;
+        @include phones {
+            width: 100%;
+        }
+    }
+    
+    .buy-review {
+        margin-left: -25px;
+        @include phones {
+            margin-left: 0px;
+        }
+    }
+    
+    .input {
+        display: none;
+    }
+    
+    .input__review {
+        display: block;
+        width: 350px;
+        padding: 5px;
+        height: 100px;
+        border-radius: 3px;
+        @include phones {
+            width: 100%;
+        }
+    }
+    
     .main__label {
-        padding: 15px;
+        display: inline-block;
+        margin: 0 0 -1px;
+        padding: 15px 25px;
+        font-weight: 600;
+        color: #bbb;
+        border: 1px solid transparent;
     }
-}
-
-.block-tab {
-    width: 80%;
-    padding-top: 35px;
-    padding-left: 50px;
-    @include phones {
-        width: 100%;
-        padding-left: 20px;
+    
+    .buy__own,
+    .buy__email {
+        display: block;
     }
-}
-
-.buy__review,
-.buy__own,
-.buy__email {
-    font-size: 16px;
-}
+    
+    .main__label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+    
+    .buy__text {
+        width: 350px;
+        height: 23px;
+        padding-left: 3px;
+        display: block;
+        border-radius: 3px;
+        @include phones {
+            width: 100%;
+        }
+    }
+    
+    .main__label[for*='1']:before {
+        content: '\f1cb';
+    }
+    
+    .main__label[for*='2']:before {
+        content: '\f17d';
+    }
+    
+    .main__label[for*='3']:before {
+        content: '\f16b';
+    }
+    
+    .main__label[for*='4']:before {
+        content: '\f1a9';
+    }
+    
+    .main__label:hover {
+        color: #888;
+        cursor: pointer;
+    }
+    
+    input:checked+.main__label {
+        color: #555;
+        border: 1px solid #ddd;
+        border-top: 2px solid orange;
+        border-bottom: 1px solid #fff;
+    }
+    
+    #tab1:checked~#content1,
+    #tab2:checked~#content2,
+    #tab3:checked~#content3,
+    {
+        display: block;
+    }
+    
+    .buy__desc {
+        @include phones {
+            width: 90%;
+        }
+    }
+    
+    @media screen and (max-width: 650px) {
+        .main__label {
+            font-size: 0;
+        }
+        .main__label:before {
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .main__label {
+            padding: 15px;
+        }
+    }
+    
+    .block-tab {
+        width: 80%;
+        padding-top: 35px;
+        padding-left: 50px;
+        @include phones {
+            width: 100%;
+            padding-left: 20px;
+        }
+    }
+    
+    .buy__review,
+    .buy__own,
+    .buy__email {
+        font-size: 16px;
+    }

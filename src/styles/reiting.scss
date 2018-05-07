@@ -1,6 +1,6 @@
 .rating-count {
     display: flex;
-    width: 110px;
+    width: 200px;
 }
 
 .rating-count input {
@@ -21,8 +21,8 @@
 .rating-count input+label {
     font-size: 0;
     display: block;
-    width: 22px;
-    height: 10px;
+    width: 15px;
+    height: 14px;
     cursor: pointer;
     background-image: url(../images/rating-star_fill.svg);
 }
