@@ -160,7 +160,6 @@
     }
     
     .buy-review {
-        margin-left: -25px;
         @include phones {
             margin-left: 0px;
         }
@@ -283,4 +282,10 @@
     .buy__own,
     .buy__email {
         font-size: 16px;
+    }
+    
+    .rating-count {}
+    
+    .raiting__label {
+        width: 150px;
     }
