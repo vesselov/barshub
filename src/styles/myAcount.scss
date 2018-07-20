@@ -1,8 +1,15 @@
 .acount-block {
     display: block;
     width: 80%;
-    margin-left: 30px;
+    margin-left: 200px;
     margin-top: 50px;
+    @include tablets {
+        width: 100%;
+        margin-left: 100px;
+    }
+    @include phones {
+        margin-left: 50px;
+    }
 }
 
 .acount__title,
@@ -20,9 +27,12 @@
 
 .acount-form {
     border: 1px solid #d3ced2;
-    ;
+    width: 50%;
     border-radius: 3px;
     padding: 30px 20px;
+    @include tablets {
+        width: 80%;
+    }
 }
 
 .acount__label,
