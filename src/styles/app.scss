@@ -2,7 +2,10 @@
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     width: 100%;
     margin: auto;
+    height: 100%;
 }
+
+body {}
 
 a:hover {
     text-decoration: none;
@@ -10,16 +13,6 @@ a:hover {
 
 .content {
     margin: auto;
-}
-
-.footer {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    text-align: center;
-    margin-top: 25px;
-    color: #aaaaaa;
-    font-size: 11.5px;
-    height: 80px;
-    width: 100%;
 }
 
 @import'font-awesome.css';
