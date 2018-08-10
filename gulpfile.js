@@ -14,7 +14,7 @@ const isDevelopment =!process.env.Node_ENV || process.env.NODE_ENV == 'developme
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
+
 var pxtorem = require('gulp-pxtorem');
 
 // scripts
@@ -61,10 +61,6 @@ function styles() {
         .pipe(debug({title:'rem'}))
         .pipe(pxtorem())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(autoprefixer({
-            browsers: ['last 4 versions'],
-            cascade: false
-        })) //префикс
         .pipe(gulp.dest(paths.styles.dest))
 
 }
