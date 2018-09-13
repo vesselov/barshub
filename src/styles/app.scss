@@ -4,6 +4,9 @@
     margin: auto;
     height: 100%;
 }
+.carousel-indicators li{
+    width: 20px;
+}
 
 body {}
 
@@ -29,6 +32,7 @@ a:hover {
 @import 'buy.scss';
 @import 'reiting.scss';
 @import 'myAcount.scss';
+@import 'finder.scss';
 html {
     @include tablets {
         font-size: 15px;

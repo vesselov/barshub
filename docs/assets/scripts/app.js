@@ -1,47 +1,13 @@
-$(document).ready(function() {
+var navbar =  $('.menu-block');  
+var wrapper = $('.wrapper');        
 
-    $(".fa-search").click(function() {
-        $(".container__find, .input").toggleClass("active");
-        $("input[type='text']").focus();
-    });
-
-});
-
-var instance = M.Tabs.init(el, options);
-
-// Or with jQuery
-
-$(document).ready(function() {
-    $('.tabs').tabs();
-});
-
-function menuOpen() {
-
-    var elem = document.getElementById('menu');
-    if (elem.style.display === 'flex') {
-        elem.style.display === 'none';
-
-    } else { elem.style.display === 'flex' }
-
-
-};
-$(function() {
-
-    var elem = $('.menu-block');
-    var top = $(this).scrollTop();
-
-    if (top > h_hght) {
-        elem.css('top', h_mrg);
-    }
-
-    $(window).scroll(function() {
-        top = $(this).scrollTop();
-
-        if (top + h_mrg < h_hght) {
-            elem.css('top', (h_hght - top));
-        } else {
-            elem.css('top', h_mrg);
-        }
-    });
-
+$(window).scroll(function(){
+    var nsc = $(document).scrollTop();
+    var bp1 = wrapper.offset().top;
+    var bp2 = bp1 + wrapper.outerHeight()+$(window).height();
+    
+    if (nsc>bp1) {  navbar.css('position','fixed'); }
+    else { navbar.css('position','absolute'); }
+    if (nsc>bp2) { navbar.css('top', bp2-nsc); }
+    else { navbar.css('top', '0'); }
 });
