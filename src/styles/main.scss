@@ -64,3 +64,35 @@ $phones:480px;
     top: 40px;
     left: 30px;
 }
+.c1{
+
+    position:fixed;
+    width:50px;
+    height:45px;
+    bottom:20px;
+    right: 20px;
+    background: #343538;
+    border-radius:5%;
+    z-index: 10000;
+  }
+  .c1:hover, .c1:focus{
+    filter:brightness(1.5);
+    outline:none;
+  }
+  .c1:before, .c1:after{
+    content:"";
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  .c1:after{
+    width: 15px;
+    height: 15px;
+    transform:translate(-50%, -50%) rotate(45deg);
+    border-top:5px solid #EEEEEE;
+    border-left:5px solid #EEEEEE;
+   
+    
+  }

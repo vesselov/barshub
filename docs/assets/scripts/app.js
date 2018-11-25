@@ -1,13 +1,17 @@
-var navbar =  $('.menu-block');  
-var wrapper = $('.wrapper');        
 
-$(window).scroll(function(){
-    var nsc = $(document).scrollTop();
-    var bp1 = wrapper.offset().top;
-    var bp2 = bp1 + wrapper.outerHeight()+$(window).height();
-    
-    if (nsc>bp1) {  navbar.css('position','fixed'); }
-    else { navbar.css('position','absolute'); }
-    if (nsc>bp2) { navbar.css('top', bp2-nsc); }
-    else { navbar.css('top', '0'); }
-});
+function up(){
+    var button = $('.c1');
+     $(window).on('scroll', () =>{
+         if($(this).scrollTop() >= 150){
+             button.fadeIn();
+
+         }else{
+             button.fadeOut();
+         }
+        
+   });
+   button.click(function(){
+       $('body,html').animate({scrollTop:0},2000)
+   })
+}
+up();
