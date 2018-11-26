@@ -4,38 +4,19 @@ block variables
   - var title = 'BursHub'
 block content
   section.slider
-    #carouselExampleIndicators.carousel.slide(data-ride="carousel")
-      ol.carousel-indicators
-        li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
-        li(data-target="#carouselExampleIndicators" data-slide-to="1")
-        li(data-target="#carouselExampleIndicators" data-slide-to="2")
-        li(data-target="#carouselExampleIndicators" data-slide-to="3")
-        li(data-target="#carouselExampleIndicators" data-slide-to="4")
-        li(data-target="#carouselExampleIndicators" data-slide-to="5")
-      
-      .carousel-inner
-        .carousel-item.active
-          img.d-block.w-100(src="./assets/images/bars-hub-slider.jpg" alt="First slide")
-        
-        .carousel-item
-          img.d-block.w-100(src="./assets/images/bars-hub-slider2.jpg" alt="Second slide")
-      
-        .carousel-item
-          img.d-block.w-100(src="./assets/images/bars-hub-slider3.jpg" alt="Second slide")
-        .carousel-item
-          img.d-block.w-100(src="./assets/images/bars-hub-slider4.jpg" alt="Second slide")
-        .carousel-item
-          img.d-block.w-100(src="./assets/images/bars-hub-slider5.jpg" alt="Second slide")
-        
-      a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
-        .carousel-control-prev-icon(aria-hidden="true")
-        .sr-only Previous
-      
-      a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
-        .carousel-control-next-icon(aria-hidden="true")
-        .sr-only Next
-
-         
+    ul.js__slider__images.slider__images
+      li.slider__images-item
+        img.slider__images-image(src="./assets/images/bars-hub-slider.jpg" alt="First slide")
+      li.slider__images-item  
+        img.slider__images-image(src="./assets/images/bars-hub-slider3.jpg" alt="Second slide")
+      li.slider__images-item
+        img.slider__images-image(src="./assets/images/bars-hub-slider4.jpg" alt="Second slide")
+      li.slider__images-item
+        img.slider__images-image(src="./assets/images/bars-hub-slider5.jpg" alt="Second slide")
+    .slider__controls    
+      .slider__control.js__slider__control--prev.slider__control--prev
+      ol.js__slider__pagers.slider__pagers
+      .slider__control.js__slider__control--next.slider__control--next
   section.icons-block
     .icons-block__item 
       .icons-block__list
