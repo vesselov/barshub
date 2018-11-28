@@ -1,16 +1,12 @@
 .acount-block {
-    display: block;
-    margin-left: 200px;
-    margin-right: 20px;
-    margin-top: 50px;
-    overflow: hidden;
-    width: 50%;
+    flex: 10 0 auto;
+    width: 30%;
+    align-self:center;
     @include tablets {
-        margin-left: 100px;
-        width: inherit;
+        width: 80%; 
     }
     @include phones {
-        margin-left: 50px;
+       
     }
 }
 

@@ -1,8 +1,23 @@
 .wrapper {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    width: 100%;
-    margin: auto;
     
+   flex : 1 0 auto;
+}
+body, html {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+    margin: auto;
+   
+    display: flex;
+    flex-direction: column;
+}
+.content{
+   
+    
+   
+}
+.header-content{
+    flex-grow: 1;
 }
 .carousel-indicators li{
     width: 20px;

@@ -56,6 +56,7 @@ ul li:hover ul {
     padding: 0;
     background: #343538;
     display: none;
+    
 }
 
 .sub-list__item {
@@ -68,7 +69,8 @@ ul li:hover ul {
     color: #e2e2e2;
     width: 190px;
     background: #464646;
-    &:hover {
+    text-decoration: none;
+       &:hover {
         background: #00bcff;
         transition: .4s;
         color: #e2e2e2;
