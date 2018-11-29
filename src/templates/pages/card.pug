@@ -3,6 +3,7 @@ extends ../template
 block variables
   - var title = 'BursHub'
 block content
-  include ../common/header
-  include ../common/menu
-  include ../common/footer
+    include ../common/header
+    include ../common/menu
+    form(action="").card-form
+      .form__card Моя карта

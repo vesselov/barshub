@@ -1,87 +1,82 @@
 extends ../template
-
 block variables
   - var title = 'BursHub'
 block content
-  include ../common/header
-  include ../common/menu
-  .block-buy
-    
-    .block-left
-      .block-buy__title Домой / Dana 35 C-Clip BARS Hub
-      a.block-buy__link(href="")
-        img.block-buy__image(src="./assets/images/IMG_20150911_143703-600x600.jpg", alt="")
-        .sale 
-          .sale__text sale
-       
+    include ../common/header
+    include ../common/menu
+    .block-buy
+      .block-left
+        .block-buy__title Домой / Dana 35 C-Clip BARS Hub
+        a.block-buy__link(href="")
+          img.block-buy__image(src="./assets/images/IMG_20150911_143703-600x600.jpg", alt="")
+          .sale 
+            .sale__text sale
+      .block-right
+        .block-right__product Dana 35 C-Clip BARS Hub
+        .block-price
+          strike(font-size: 13px;).block-right__price.block-right__price--sale $259.00 
+          .block-right__price $189.00
+        .block-right__stock 27 на складе
+        .block-right__order 
+          input.block-right__number(type='number' step='1' min='1' max='27' size='4' value='1') 
+          button.block-right__button(type='submit') Добавить 
+    .block-tab
+      .maintab
+      input.input#tab1(type="radio" name="tabs" checked)
+      label.main__label(for="tab1") Описание
+        
+      input#tab2.input(type="radio" name="tabs")
+      label.main__label(for="tab2") Добавить информацию
+        
+      input#tab3.input(type="radio" name="tabs")
+      label.main__label(for="tab3") Ответы
+        
       
-    .block-right
-      .block-right__product Dana 35 C-Clip BARS Hub
-      .block-price
-        strike(font-size: 13px;).block-right__price.block-right__price--sale $259.00 
-        .block-right__price $189.00
-      .block-right__stock 27 на складе
-      .block-right__order 
-        input.block-right__number(type='number' step='1' min='1' max='27' size='4' value='1') 
-        button.block-right__button(type='submit') Добавить 
-  .block-tab
-    .maintab
-    input.input#tab1(type="radio" name="tabs" checked)
-    label.main__label(for="tab1") Описание
-      
-    input#tab2.input(type="radio" name="tabs")
-    label.main__label(for="tab2") Добавить информацию
-      
-    input#tab3.input(type="radio" name="tabs")
-    label.main__label(for="tab3") Ответы
-      
-    
-      
-    .sect#content1
-      H4 Опичание продукта
+        
+      .sect#content1
+        H4 Опичание продукта
 
-      p Dana 35 C-Clip rear axle is found on…
+        p Dana 35 C-Clip rear axle is found on…
 
-      p 1984-1997 Jeep Wrangler
-      p 1984-2001 Jeep Cherokee
-      p 1993-2004 Jeep Grand Cherokee
-      p 1986-1992 Jeep Comanche
-      p 1987-1995 Jeep YJ Wrangler
-      p 1997-2006 Jeep TJ Wrangle
-    
+        p 1984-1997 Jeep Wrangler
+        p 1984-2001 Jeep Cherokee
+        p 1993-2004 Jeep Grand Cherokee
+        p 1986-1992 Jeep Comanche
+        p 1987-1995 Jeep YJ Wrangler
+        p 1997-2006 Jeep TJ Wrangle
       
-    .sect#content2
-      H3 Добавленная информация
-      p Вес 	4.53592 кг
-      p Размер	6 x 6 x 6 cm 
-    
+        
+      .sect#content2
+        H3 Добавленная информация
+        p Вес 	4.53592 кг
+        p Размер	6 x 6 x 6 cm 
       
-    .sect#content3
-      H3 Отзывы
-      p Пока нет никаких отзывов
-      p Будь первым оставившим отзыв “Dana 35 C-Clip BARS Hub”
+        
+      .sect#content3
+        H3 Отзывы
+        p Пока нет никаких отзывов
+        p Будь первым оставившим отзыв “Dana 35 C-Clip BARS Hub”
 
-       
-      .rating-count 
-        .raiting__label Ваш рейтинг
-        input#c1(type="radio" name="rating" value="1" required)
-        label.raiting__star(for="c1") 1
-        input#c2(type="radio" name="rating" value="2")
-        label.raiting__star(for="c2") 2
-        input#c3(type="radio" name="rating" value="3")
-        label.raiting__star(for="c3") 3
-        input#c4(type="radio" name="rating" value="4")
-        label.raiting__star(for="c4") 4
-        input#c5(type="radio" name="rating" value="5")
-        label.raiting__star(for="c5") 5
-    
-      form(action="").buy-review
-        .buy__desc 
-          label.buy__review Ваш отзыв
-            textarea.input__review(type='text' cols='40' rows='7' aria-required="true")
-          label.buy__own Имя
-            input.buy__text(type='text' size='30' aria-required="true")    
-          label.buy__email Ваша почта
-            input.buy__text(type='text' size='30' aria-required="true")
-      button.block-right__button Отправить
-  include ../common/footer    
+        
+        .rating-count 
+          .raiting__label Ваш рейтинг
+          input#c1(type="radio" name="rating" value="1" required)
+          label.raiting__star(for="c1") 1
+          input#c2(type="radio" name="rating" value="2")
+          label.raiting__star(for="c2") 2
+          input#c3(type="radio" name="rating" value="3")
+          label.raiting__star(for="c3") 3
+          input#c4(type="radio" name="rating" value="4")
+          label.raiting__star(for="c4") 4
+          input#c5(type="radio" name="rating" value="5")
+          label.raiting__star(for="c5") 5
+      
+        form(action="").buy-review
+          .buy__desc 
+            label.buy__review Ваш отзыв
+              textarea.input__review(type='text' cols='40' rows='7' aria-required="true")
+            label.buy__own Имя
+              input.buy__text(type='text' size='30' aria-required="true")    
+            label.buy__email Ваша почта
+              input.buy__text(type='text' size='30' aria-required="true")
+        button.block-right__button Отправить

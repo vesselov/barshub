@@ -32,6 +32,7 @@ $phones:480px;
 
 .youtube-block {
     display: block;
+    padding-top: 20px;
     @include tablets {
         width: 100%;
     }

@@ -1,15 +1,25 @@
 .header{
     display: flex;
-    padding: 0 20px;
+    margin: auto;
+    flex-direction: column;
+}
+.title__block{
+    display: flex;
+    flex-direction: row;
+    align-self:center;
+    width: 100%;
+
+    
     @include tablets {
         flex-direction: column;
     }
 }
 .left-block, .right-block{
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
     height: 120px;
     display:flex;
-    align-items:center;
     @include tablets {
         height: 60px;
         width: 100%;
@@ -21,17 +31,6 @@
 }
 .header-content{
     position: relative;
-}
-.header{
-    width: 75%;
-    margin: auto;
-}
-.right-block{
-    justify-content:flex-end;
-    @include tablets {
-        justify-content: center;
-    }
-
 }
 .left-block__title{
 color: #666666;

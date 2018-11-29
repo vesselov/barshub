@@ -3,6 +3,8 @@ extends ../template
 block variables
   - var title = 'BarsHub'
 block content
+  include ../common/header
+  include ../common/menu
   section.slider
     ul.js__slider__images.slider__images
       li.slider__images-item
@@ -45,7 +47,8 @@ block content
         iframe.youtube-block(width="640" height="390" src="https://www.youtube.com/embed/Hql-Js65Td4" frameborder="0" gesture="media" allowfullscreen)
     .aside  
       img(src="./assets/images/barshub-sidebar.png", alt="").aside__pic
-  include ../common/footer
+
       
+
 
 
