@@ -65,6 +65,15 @@ $(sliderPagers).on('click', function() {
         resetTiming();
     }
 });
+//search
+$(document).ready(function(){
+  
+    $(".fa-search").click(function(){
+      $(".container__search , .container__input").toggleClass("active");
+      $("input[type='text']").focus();
+    });
+    
+  });
 
 // next/prev controls
 $(sliderControlNext).on('click', function() {
