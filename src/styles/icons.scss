@@ -83,8 +83,9 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #EEEEEE;
     @include tablets {
-        width: 80%;
+        width: 100%;
         text-align: center;
+        font-size: 20px;
     }
 }
 
