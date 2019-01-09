@@ -18,17 +18,24 @@
     }
 }
 .list__hide{
-    width: 20px;
+    width: 30px;
     position: relative;
+  
 }
 .list__menu{
+    display: none;
     background: #fff;
     height: 2px;
-    text-align: center;
     position: absolute;
-    top: 50%;
     width: 100%;
+    @include phones {
+        display: block;
+        
 }
+}
+.list__menu--up{top:30%}
+.list__menu--middle{top:50%}
+.list__menu.list__menu--bottom{bottom: 30%}
 .list__link {
     padding: 20px 35px;
     display: inline-block;
