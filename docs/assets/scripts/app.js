@@ -108,3 +108,14 @@ function resetTiming() {
       sliderTiming();
     }, sliderSpeed);
 }
+
+$(document).ready(function(){
+    var button = $('.list__hide')
+    var menu = $('list__menu')
+    button.click(function(){
+        if (button){
+            menu.css('display','block')
+            console.log('aa')
+        }
+    })
+})
