@@ -23,3 +23,10 @@ $(document).ready(function() {
 		}
 	});
 }); // end ready
+function menu (){
+	let collomn = document.getElementsByName('.list__hide');
+	let menuHide = document.getElementsByClassName('.list__item');
+	collomn.addEventListener(click, () =>{
+		alert("sdfsdfs")
+	})
+}

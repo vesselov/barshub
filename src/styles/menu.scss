@@ -14,13 +14,14 @@
         justify-content: center;
     }
     @include phones {
-        justify-content: flex-end;
+        justify-content: space-between;
+        padding: 0px 8px 0px 8px;
     }
 }
 .list__hide{
     width: 30px;
     position: relative;
-  
+    cursor: pointer;
 }
 .list__menu{
     display: none;
@@ -28,6 +29,7 @@
     height: 2px;
     position: absolute;
     width: 100%;
+    
     @include phones {
         display: block;
         
