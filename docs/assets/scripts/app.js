@@ -110,12 +110,10 @@ function resetTiming() {
 }
 
 $(document).ready(function(){
-    var button = $('.list__hide')
-    var menu = $('list__menu')
+    var button = $('.label_check')
     button.click(function(){
         if (button){
-            menu.css('display','block')
-            console.log('aa')
+           button.display ='none'
         }
     })
 })
