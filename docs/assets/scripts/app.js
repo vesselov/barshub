@@ -111,9 +111,13 @@ function resetTiming() {
 
 $(document).ready(function(){
     var button = $('.label_check')
+    var menu = $('.list__link')
+    var Blockmenu = $('.menu-block')
+    
     button.click(function(){
         if (button){
-           button.display ='none'
+            Blockmenu.css('flex-direction', 'column')
+            menu.toggle()
         }
     })
 })

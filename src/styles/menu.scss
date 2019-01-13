@@ -18,22 +18,9 @@
         padding: 0px 8px 0px 8px;
     }
 }
-.list__hide{
-    width: 30px;
-    position: relative;
-    cursor: pointer;
-}
-.list__menu{
-    display: none;
-    background: #fff;
-    height: 2px;
-    position: absolute;
-    width: 100%;  
-    @include phones {
-        display: block;
-        
-}
-}
+
+    
+
 .visuallyHidden {
     position: absolute; 
     overflow: hidden; 
@@ -68,12 +55,16 @@
     
 }
 .hamburger {
-    display: block;
+    display: none;
     width: 30px;
     height: 30px;
     position: relative;
     z-index: 1000;
     cursor: pointer;
+    @include phones {
+        display: block;
+        
+}
     
 }
 .label_check {
@@ -153,10 +144,12 @@
     }
     @include phones {
          display: none;
-        padding: 10px 15px;
+         padding: 10px 15px;
+
+
     }
     .active {
-        display: inline-block;
+        
     }
 }
 
