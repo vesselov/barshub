@@ -8,149 +8,69 @@
     font-size: 13px;
     font-weight: bold;
     margin: 0;
+   
+    padding: 20px 35px;
     padding-left: 150px;
     @include tablets {
         padding-left: 0px;
         justify-content: center;
     }
     @include phones {
-        justify-content: space-between;
+        height: 37px;
         padding: 0px 8px 0px 8px;
     }
 }
 
-    
-
-.visuallyHidden {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-}
-
-.hamburger2 .bar2,
-.hamburger3 .bar3,
-.hamburger4 .bar4 {
-    top: 13.5px;
-}
-
-.hamburger4 .bar5 {
-    bottom: 0px;
-}
-
-.hamburger4 .bar {
-    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
-}
-
-.hamburger4 .bar2 {
-    width: 1px;
-    transform: rotate(90deg);
-    left: 13.5px;
-}
-
-.hamburger4 .bar3 {
-    width: 1px;
-    left: 13.5px;
-    
-}
-.hamburger {
-    display: none;
-    width: 30px;
-    height: 30px;
+.list__item{
+   
     position: relative;
-    z-index: 1000;
     cursor: pointer;
-    @include phones {
-        display: block;
-        
-}
+ 
     
-}
-.label_check {
-    position: absolute;
-    top: 123px;
-    left: 5px;
+    @include phones {
+        top: 65px;
+        background: #343538;
 
-}
-.hamburger .bar {
-    padding: 0;
-    width: 30px;
-    height: 4px;
-    background-color: #e2e2e2;
-    display: block;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
-    position: absolute; 
+    }
 }
 
-.bar1 {
-    top: 0;
-}
 
-.bar2,
-.bar3 {
-    top: 13.5px;
-}
-
-.bar3 {
-    right: 0;
-}
-
-.bar4 {
-    bottom: 0;
-}
-.checkbox4:checked + label > .hamburger4 > .bar1{
-    top: 13.5px;
-    background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar2{
-    left: 0px;
-    width: 30px;
-    transform: rotate(45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar3{
-    left: 0;
-    width: 30px;
-    transform: rotate(-45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar4{
-    background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar5{
-    bottom: 13.5px;
-    background-color: transparent; 
-}
 
 .list__link {
     padding: 20px 35px;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    color: #e2e2e2;
     text-decoration: none;
+    color: #e2e2e2;
+    
     &:hover {
         background: #00bcff;
         transition: .5s;
         color: #e2e2e2;
     }
     @include tablets {
-        padding: 14px 20px;
+        padding: 20px 20px;
 
     }
     @include phones {
          display: none;
          padding: 10px 15px;
+         
+
 
 
     }
-    .active {
-        
-    }
+    
+}
+.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 37px;
+    
+   
+}
+.active_link{
+    display: flex;
+    justify-content: center;
 }
 
 ul li:hover ul {
@@ -304,4 +224,108 @@ ul li:hover ul {
     padding-left: 5px;
     transition: all 0.5s 0.8s ease;
   }
-      
+  .visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
+.hamburger2 .bar2,
+.hamburger3 .bar3,
+.hamburger4 .bar4 {
+    top: 13.5px;
+}
+
+.hamburger4 .bar5 {
+    bottom: 0px;
+}
+
+.hamburger4 .bar {
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.hamburger4 .bar2 {
+    width: 1px;
+    transform: rotate(90deg);
+    left: 13.5px;
+}
+
+.hamburger4 .bar3 {
+    width: 1px;
+    left: 13.5px;
+    
+}
+.hamburger {
+
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+    @include phones {
+        display: block;
+        
+}
+    
+}
+.label_check {
+    position: absolute;
+    top: 123px;
+    left: 5px;
+
+}
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #e2e2e2;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+.checkbox4:checked + label > .hamburger4 > .bar1{
+    top: 13.5px;
+    background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar2{
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar3{
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar4{
+    background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar5{
+    bottom: 13.5px;
+    background-color: transparent; 
+}

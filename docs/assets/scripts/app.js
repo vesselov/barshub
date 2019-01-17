@@ -114,10 +114,16 @@ $(document).ready(function(){
     var menu = $('.list__link')
     var Blockmenu = $('.menu-block')
     
+    
     button.click(function(){
         if (button){
-            Blockmenu.css('flex-direction', 'column')
-            menu.toggle()
-        }
-    })
+         Blockmenu.toggleClass('active') 
+         menu.toggleClass('active_link') 
+        }     
 })
+    if ($(window).width() >= 480){
+        Blockmenu.removeClass('active')
+        menu.removeClass('active_link')
+        console.log('страница больше 480')
+    }
+});
