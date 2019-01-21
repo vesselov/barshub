@@ -124,6 +124,21 @@ $(document).ready(function(){
     if ($(window).width() >= 480){
         Blockmenu.removeClass('active')
         menu.removeClass('active_link')
+
         console.log('страница больше 480')
     }
 });
+//стрелки на слайдере
+$(document).ready(function(){
+    var nav = $('.slider__control');
+    var elem = $('.js__slider__images');
+    elem.onfocus = function(){
+        console.log('ddd')
+    }
+});
+//на странице карта. переход в магазин
+$(document).ready(function(){
+    $('.card__button').click(()=>{
+        window.location = 'buy.html'
+    }) 
+})

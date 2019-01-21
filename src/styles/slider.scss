@@ -85,10 +85,12 @@
     margin-top: 30px;
     user-select: none;
     text-align: center;
+
   }
   .slider__control {
     position: absolute;
     top: 35%;
+    display: none;
     cursor: pointer;
     background: #343538;
     width: 25px;

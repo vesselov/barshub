@@ -1,9 +1,11 @@
 .acount-block {
-    flex: 10 0 auto;
-    width: 30%;
-    align-self:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
     @include tablets {
-        width: 80%; 
+        width: 100%; 
     }
     @include phones {
        
@@ -27,7 +29,10 @@
     border: 1px solid #d3ced2;
     border-radius: 3px;
     padding: 30px 20px;
-    @include tablets {}
+    width: 45%;
+    @include tablets {
+        width: 90%;
+    }
 }
 
 .acount__label,
@@ -43,4 +48,6 @@
     padding: 3px;
 }
 
-.acount__button {}
+.acount__button {
+    margin-top: 10px;
+}
