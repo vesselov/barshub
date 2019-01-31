@@ -150,6 +150,7 @@
     }
     
     .block-right__button {
+        margin-top: 10px;
         padding: 5px 15px;
         border-radius: 3px;
     }
@@ -223,7 +224,7 @@
     }
     
     .main__label[for*='2']:before {
-        content: '\f17d';
+        content: '\f18d';
     }
     
     .main__label[for*='3']:before {
@@ -287,8 +288,10 @@
     
     .buy__review,
     .buy__own,
+    .raiting__label,
     .buy__email {
         font-size: 16px;
+        margin-bottom: 8px;
     }
     
     .rating-count {}

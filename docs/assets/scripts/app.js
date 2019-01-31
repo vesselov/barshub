@@ -130,15 +130,15 @@ $(document).ready(function(){
 });
 //стрелки на слайдере
 $(document).ready(function(){
-    var nav = $('.slider__controls ');
-    var elem = $('.js__slider__images');
-    elem.mouseover(()=>{
-        if($(this)){
-            nav.css('display', 'block')
-            console.log('aa');
-        }else{
-            nav.css('display', 'none')
-        }
+    var nav = $('.slider__control ');
+    var elem = $('.slider');
+    elem.hover(()=>{
+        nav.css('display', 'block');
+        
+        },
+        ()=>{
+            nav.css('display','none');
+
     })
 });
 //на странице карта. переход в магазин
