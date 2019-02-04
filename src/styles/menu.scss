@@ -161,7 +161,7 @@ ul li:hover ul {
 }
 
 .menu-block__hidden {
-    display: none;
+   
     @include phones {
         display: flex;
         cursor: pointer;
@@ -182,71 +182,17 @@ ul li:hover ul {
     display: block;
     margin-right: 30px;
 }
-.container__search{
-    width: 0px;
-    background: #41484a;
-    text-align: center;
-    line-height: 45px;
-    padding-right: 50px;
-    transition: all 0.5s ease;
-    border-radius: 5px;
-    position: relative;
-   
-  }
-  .container__input{
-    border: 0px;
-    border-bottom: 2px solid #fff;
-    background: transparent;
-    width: 0%;
-    padding: 5px 0;
-    outline: none;
-    color: #fff;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  .container__search .fa{
-    color: #ffffff;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 22px;
-    cursor: pointer;
-    @include tablets {
-        top: 10px;
-    }
-  }
-  .container__search.active{
-    width: 250px;
-    padding-left: 25px;
-    transition: all 0.5s ease;
-  }
-  .container__input.active{
-    width: 98%;
-    padding-left: 5px;
-    transition: all 0.5s 0.8s ease;
-  }
-  .visuallyHidden {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-}
-html {
-    background: #ecf0f1;
-  }
-  
-  body {
-    margin: 0; 
-    padding: 0; 
-  }
+
   .menu-box {
     position: relative;
-
+    display: none;
     top: -18px;
     width: 50px;
     height: 50px;
     z-index: 1000;
+    @include phones {
+        display: block;
+    }
   }
  
 .comtainer__menu{

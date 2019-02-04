@@ -56,8 +56,15 @@ block content
         H3 Отзывы
         p Пока нет никаких отзывов
         p Будь первым оставившим отзыв “Dana 35 C-Clip BARS Hub”
+        .content3__comment 
+          img(src="http://0.gravatar.com/avatar/f6538637d8e0e82b32ae2fb4cc7c3e38?s=120&d=mm&r=g 2x", alt="").img__comment  
+          .comment__message
+          .comment__stars
+        .content3__comment 
+          img(src="http://0.gravatar.com/avatar/f6538637d8e0e82b32ae2fb4cc7c3e38?s=120&d=mm&r=g 2x", alt="").img__comment  
+          .comment__message
+          .comment__stars     
 
-        
         .rating-count 
           .raiting__label Ваш рейтинг
           input#c1(type="radio" name="rating" value="1" required)
@@ -71,12 +78,12 @@ block content
           input#c5(type="radio" name="rating" value="5")
           label.raiting__star(for="c5") 5
       
-        form(action="").buy-review
+        form(action="server.php" method="post").buy-review#form
           .buy__desc 
             label.buy__review Ваш отзыв
-              textarea.input__review(type='text' cols='40' rows='7' aria-required="true")
+              textarea.input__review(type='text' cols='40' rows='7' aria-required="true" name='message' )
             label.buy__own Имя
-              input.buy__text(type='text' size='30' aria-required="true")    
+              input.buy__text(type='text' size='30' aria-required="true" name='name')    
             label.buy__email Ваша почта
-              input.buy__text(type='text' size='30' aria-required="true")
-        button.block-right__button Отправить
+              input.buy__text(type='text' size='30' aria-required="true" name='email')
+          button(type='submit').block-right__button Отправить
