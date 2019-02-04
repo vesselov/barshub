@@ -232,101 +232,81 @@ ul li:hover ul {
     height: 1px; width: 1px; 
     margin: -1px; padding: 0; border: 0; 
 }
-
-.hamburger2 .bar2,
-.hamburger3 .bar3,
-.hamburger4 .bar4 {
-    top: 13.5px;
-}
-
-.hamburger4 .bar5 {
-    bottom: 0px;
-}
-
-.hamburger4 .bar {
-    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
-}
-
-.hamburger4 .bar2 {
-    width: 1px;
-    transform: rotate(90deg);
-    left: 13.5px;
-}
-
-.hamburger4 .bar3 {
-    width: 1px;
-    left: 13.5px;
-    
-}
-.hamburger {
-
-    display: none;
-    width: 30px;
-    height: 30px;
+html {
+    background: #ecf0f1;
+  }
+  
+  body {
+    margin: 0; 
+    padding: 0; 
+  }
+  .menu-box {
     position: relative;
+
+    top: -18px;
+    width: 50px;
+    height: 50px;
     z-index: 1000;
-    cursor: pointer;
-    @include phones {
-        display: block;
-        
+  }
+ 
+.comtainer__menu{
+
+  
 }
-    
+
+.menu__container{
+  height:50px;
+  width:50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  &:hover{
+    cursor:pointer;
+  }
 }
-.label_check {
+.hambergerIcon{
+  height: 5px;
+  width:43px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50px;
+  background-color: rgb(240, 240, 240);
+  transform: translate(-50%,-50%) rotate(0deg);
+  transition: all ease 0.5s;
+  &::before,&::after{
+    content:"";
     position: absolute;
-    top: 123px;
-    left: 5px;
-
-}
-.hamburger .bar {
-    padding: 0;
-    width: 30px;
-    height: 4px;
-    background-color: #e2e2e2;
-    display: block;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
-    position: absolute; 
-}
-
-.bar1 {
-    top: 0;
-}
-
-.bar2,
-.bar3 {
-    top: 13.5px;
-}
-
-.bar3 {
-    right: 0;
-}
-
-.bar4 {
-    bottom: 0;
-}
-.checkbox4:checked + label > .hamburger4 > .bar1{
-    top: 13.5px;
-    background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar2{
-    left: 0px;
-    width: 30px;
-    transform: rotate(45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar3{
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    margin: auto;
+    width: 50%;
+    transition: all ease 0.5s;
+  }
+  &::before{
+    top: -10px;
     left: 0;
-    width: 30px;
-    transform: rotate(-45deg);
+    transform-origin: left;
+  }
+  &::after{
+    bottom:-10px;
+    right: 0;
+    transform-origin: right;
+  }
 }
 
-.checkbox4:checked + label > .hamburger4 > .bar4{
-    background-color: transparent;
+.open{
+  transform:translate(-50%,-50%) rotate(135deg);
+  &::before{
+    top:0;
+    transform: translateX(100%) rotate(-90deg);
+  }
+  &::after{
+    bottom:0;
+    transform: translateX(-100%) rotate(-90deg);
+  }
 }
 
-.checkbox4:checked + label > .hamburger4 > .bar5{
-    bottom: 13.5px;
-    background-color: transparent; 
-}
+

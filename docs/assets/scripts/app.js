@@ -110,7 +110,7 @@ function resetTiming() {
 }
 
 $(document).ready(function(){
-    var button = $('.label_check')
+    var button = $('.menu-box')
     var menu = $('.list__link')
     var Blockmenu = $('.menu-block')
     
@@ -147,3 +147,8 @@ $(document).ready(function(){
         window.location = 'buy.html'
     }) 
 })
+$(document).ready(function(){
+    $(".menu__container").on('click',function(){
+      $(this).find(".hambergerIcon").toggleClass("open");
+    });
+  })
