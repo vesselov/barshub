@@ -188,3 +188,4 @@ var ajaxForm = function (form) {
         data: data,
         dataType: 'JSON'
     });
+}
