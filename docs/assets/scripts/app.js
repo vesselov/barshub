@@ -147,6 +147,9 @@ $(document).ready(function () {
     $('.card__button').click(() => {
         window.location = 'buy.html'
     })
+    $('.block-buy__link').click(function(e){
+        e.preventDefault();
+    })
 })
 $(document).ready(function () {
     $(".menu__container").on('click', function () {

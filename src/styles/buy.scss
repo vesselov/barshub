@@ -15,7 +15,7 @@
         font-size: 20px;
     }
     .sect{
-        height: 450px;
+       
     }
     
     .sale {
@@ -249,7 +249,7 @@
     
     #tab1:checked~#content1,
     #tab2:checked~#content2,
-    #tab3:checked~#content3,
+    #tab3:checked~#content3
     {
         display: block;
     }
@@ -312,7 +312,7 @@
 }
 .comment__message{
   height: 100px;
-    width: 100%;
+    width: 70%;
   border: 1px solid #333;
   border-radius: 3px;
   margin-left: 10px;
