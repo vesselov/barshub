@@ -150,6 +150,20 @@ $(document).ready(function () {
     $('.block-buy__link').click(function(e){
         e.preventDefault();
     })
+    //////////////////////// menu fixed/////////
+    var h_hght = 120; // высота шапки
+   var h_mrg = 0;     // отступ когда шапка уже не видна
+   $(function(){
+    $(window).scroll(function(){
+       var top = $(this).scrollTop();
+       var elem = $('.menu-block');
+       if (top+h_mrg < h_hght) {
+        elem.css({'top': (h_hght-top),'position':'unset'});
+       } else {
+        elem.css({'top': h_mrg, 'position':'fixed'});
+       }
+     });
+   });
 })
 $(document).ready(function () {
     $(".menu__container").on('click', function () {
